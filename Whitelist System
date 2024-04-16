@@ -24,8 +24,8 @@ local HWID = game:GetService("RbxAnalyticsService"):GetClientId() -- We are crea
 
 for i,v in pairs(HWIDTable) do 
 	if v == HWID then
-		print ("The HWID is Whitelisted. HWID: ", HWID)
+		print ("โอเคมึงมีงไวริสใช้โปรให้สนุก", HWID)
 	end elseif v ~= HWID then
-		print("The HWID is not Whitelisted. HWID: ", HWID)
+		print("จนละเสือกอยากใช้สคริปกู", HWID)
 	end	
 end
