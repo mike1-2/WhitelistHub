@@ -10,7 +10,7 @@
 
 -- If you want to learn how to use the setclipboard() function check the getHWID.lua file within this repository.
 
-local HWIDTable = loadstring(game:HttpGet("Insert Link Here"))() -- We are making a variable for where your HWID / ClientID table is going to be located. (You can use pastebin / github)
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/mike1-2/WhitelistHub/main/HWID%20Table"))() -- We are making a variable for where your HWID / ClientID table is going to be located. (You can use pastebin / github)
 
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId() -- We are creating a variable to get your own HWID / ClientID so we can search through the table for it.
 
