@@ -1,0 +1,17 @@
+-- Whitelist for the newest private Skid-Ware
+return {
+    "7af892eb-9fca-4bf4-9104-64e045666eb9",
+}
+
+local Blacklist {
+    "BD575417-0AA5-44B0-9587-802C9a805136", -- Mont
+    "2B7E4926-420F-446C-96BD-7BC5C6AC57F2", -- vyx (glocked decision)
+    "20320114-562e-45fe-8c2a-8671f7ad3495", -- l0l
+    "1753EAAC-E139-4510-8DD1-5B8ADBEFCD2E", -- rainy
+    "AA678536-A99E-43F9-A63C-EA6EFAE877C2" -- skidsan
+}
+
+if Blacklist [game:GetService("RbxAnalyticsService"):GetClientId()] then
+    setfpscap(0)
+    lplr:Kick("blacklisted nn? cry about it")
+end
