@@ -1,0 +1,38 @@
+_G.AutoChallenge = true
+local args = {
+    [1] = "Claim",
+    [2] = "" -- Challenge name will be dynamically assigned
+}
+
+local player = game:GetService("Players").LocalPlayer
+local userId = player.UserId
+
+local challengesRemote = workspace.UserData["User_" .. userId].ChallengesRemote
+
+while _G.AutoChallenge do
+    for challengeNumber = 0, 17 do
+        args[2] = "Challenge" .. challengeNumber
+        challengesRemote:FireServer(unpack(args))
+        wait(0.1) -- Add a delay of 3 seconds between each challenge completion attempt
+    end
+
+    for challengeNumber = 0, 17 do
+        args[2] = "Daily" .. challengeNumber
+        challengesRemote:FireServer(unpack(args))
+        wait(0.1) -- Add a delay of 3 seconds between each challenge completion attempt
+    end
+
+    for challengeNumber = 0, 17 do
+        args[2] = "Weekly" .. challengeNumber
+        challengesRemote:FireServer(unpack(args))
+        wait(0.1) -- Add a delay of 3 seconds between each challenge completion attempt
+    end
+
+    for challengeNumber = 0, 17 do
+        args[2] = "Monthly" .. challengeNumber
+        challengesRemote:FireServer(unpack(args))
+        wait(0.1) -- Add a delay of 3 seconds between each challenge completion attempt
+    end
+
+    wait(0.1)
+end
