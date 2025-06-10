@@ -1,2 +1,2 @@
-game:GetService("Players").LocalPlayer:Kick("Script นี้ถูกปิดใช้งานชั่วคราวโดยเจ้าของ")
+print("loading")
 return
