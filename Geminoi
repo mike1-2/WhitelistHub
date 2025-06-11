@@ -1,2 +1,24 @@
-print("loading")
-return
+local script_disabled = false
+
+local allowedHWIDs = {
+    ["your_hwid_1"] = true,
+    ["your_hwid_2"] = true,
+    ["your_hwid_3"] = true,
+}
+
+local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+if syn and syn.crypt then
+    hwid = syn.crypt.hash(hwid)
+end
+
+if script_disabled then
+    game:GetService("Players").LocalPlayer:Kick("Script นี้ถูกปิดใช้งานโดยเจ้าของ")
+    return
+end
+
+if not allowedHWIDs[hwid] then
+    game:GetService("Players").LocalPlayer:Kick("Script ค่ายกูไม่ได้เป็นกระหรี่เหมือนแม่มึง")
+    return
+end
+
+print("Check Hwid Success")
