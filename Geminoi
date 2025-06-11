@@ -1,14 +1,13 @@
 local script_disabled = false
 
 local allowedHWIDs = {
-    ["your_hwid_1"] = true,
-    ["your_hwid_2"] = true,
-    ["your_hwid_3"] = true,
+    ["06ab7cf52f6f452e94e0111b2a5b4c6e"] = true, -- ตัวอย่าง HWID ที่ hash แล้ว
 }
 
-local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local raw_hwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local hwid = raw_hwid
 if syn and syn.crypt then
-    hwid = syn.crypt.hash(hwid)
+    hwid = syn.crypt.hash(raw_hwid)
 end
 
 if script_disabled then
