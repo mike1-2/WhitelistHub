@@ -3,6 +3,7 @@ local script_disabled = false
 local allowedHWIDs = {
     ["d8a10683-33a1-4424-8f1c-585ced8ee4a8"] = true,
     ["15fd8993-2cda-4ab4-97c9-d2c16a342bc3"] = true,
+    ["495195f9-b072-408b-9e7b-1f2624da1ffa"] = true,
     ["your_hwid_3"] = true
 }
 
