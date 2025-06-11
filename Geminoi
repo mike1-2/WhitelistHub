@@ -1,9 +1,9 @@
 local script_disabled = false
 
 local allowedHWIDs = {
-    ["your_hwid_1"] = true,
-    ["your_hwid_2"] = true,
-    ["your_hwid_3"] = true,
+    ["d8a10683-33a1-4424-8f1c-585ced8ee4a8"] = true,
+    ["15fd8993-2cda-4ab4-97c9-d2c16a342bc3"] = true,
+    ["your_hwid_3"] = true
 }
 
 local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
