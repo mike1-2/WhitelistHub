@@ -1,4 +1,4 @@
-local script_disabled = true
+local script_disabled = false
 
 local allowedHWIDs = {
     ["d8a10683-33a1-4424-8f1c-585ced8ee4a8"] = true,
