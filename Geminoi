@@ -13,7 +13,7 @@ if syn and syn.crypt then
 end
 
 if script_disabled then
-    game:GetService("Players").LocalPlayer:Kick("Script นี้ถูกปิดใช้งานโดยเจ้าของ")
+    game:GetService("Players").LocalPlayer:Kick("Script Disable")
     return
 end
 
