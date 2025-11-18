@@ -1,25 +1,8 @@
 local script_disabled = false
 
-local allowedHWIDs = {
-    ["0cea25dd-f0ba-404d-a9cc-13e8b9cec275"] = true, ----913092567569145876
-    ["fe335880-f8f6-4f25-b3eb-159db9f9e134"] = true, -----939094904024498217
-    ["4619ac71-1244-41e2-9697-f8470a641b0b"] = true,
-    ["your_hwid_3"] = true
-}
-
-local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
-if syn and syn.crypt then
-    hwid = syn.crypt.hash(hwid)
-end
-
 if script_disabled then
     game:GetService("Players").LocalPlayer:Kick("Script Disable")
     return
 end
 
-if not allowedHWIDs[hwid] then
-    game:GetService("Players").LocalPlayer:Kick("Script ค่ายกูไม่ได้เป็นกระหรี่เหมือนแม่มึง")
-    return
-end
-
-print("Check Hwid Success")
+print("Script Enabled")
