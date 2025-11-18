@@ -1,8 +1,1 @@
-local script_disabled = true
-
-if script_disabled then
-    game:GetService("Players").LocalPlayer:Kick("Script Disable")
-    return
-end
-
-print("Script Enabled")
+script_disabled = true
