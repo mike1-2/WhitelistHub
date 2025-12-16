@@ -1,1 +1,4 @@
-script_disabled = false
+DisabledPlaces = {
+    [123456789] = true,
+    [93978595733734] = true
+}
