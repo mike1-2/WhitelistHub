@@ -1,4 +1,4 @@
-DisabledPlaces = {
-    [590359607] = false,
-    [6739698191] = false
+DisabledGames = {
+    [590359607] = true,
+    [6739698191] = true
 }
